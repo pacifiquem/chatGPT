@@ -1,4 +1,4 @@
-const { hashSync, compareSync } = require("bcrypt");
+const { hashSync, compareSync } = require("bcryptjs");
 const Query = require("../models/Query");
 const User = require("../models/User");
 const { generateApiKey } = require("generate-api-key");
