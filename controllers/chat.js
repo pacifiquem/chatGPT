@@ -1,6 +1,7 @@
 const Query = require("../models/Query");
 const { createCompletionChatGTP } = require("../chatGTP");
 const { v4: uuid } = require("uuid");
+require("dotenv").config();
 
 exports.chat = async (req, res) => {
   try {

@@ -3,6 +3,7 @@ const Query = require("../models/Query");
 const User = require("../models/User");
 const { generateApiKey } = require("generate-api-key");
 const { v4: uidgen } = require("uuid");
+require("dotenv").config();
 
 exports.login = async (req, res) => {
   try {

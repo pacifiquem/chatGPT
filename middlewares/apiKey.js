@@ -1,4 +1,5 @@
 const User = require("../models/User");
+require("dotenv").config();
 
 exports.checkApiKey = async (req, res, next) => {
   try {
